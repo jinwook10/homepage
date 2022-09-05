@@ -37,28 +37,32 @@
 </nav>
 <%--브레드크럼 끝--%>
 <div class="container" style="padding-bottom: 3rem">
-    <h1 class="mb-3 " style="text-align: center;">
-        <div class="mb-3">
-            설치 사례
+    <div class="row" style="justify-content: center">
+        <div class="col-lg-12 my-4" style="text-align: start; border-bottom: solid">
+            <h3>
+                설치 사례
+            </h3>
         </div>
-        <div class="progress-bar bg-info mb-3 w-100" role="progressbar"></div>
-    </h1>
-    <div class="col-sm-4">
-        <figure id="storeCase">
-            <img src="/img/homepage/service/testStore.jpg" class="img-responsive img-rounded" valign="absmiddle">
-            <h4 class="mainText" style="padding-left: 1em;">테스트매장</h4>
-            <div class="overlay">
-                <div class="description" style="width: 100%;">
-                    <span class="mainText">테스트매장</span><br>
-                    <span class="mainText" id="installDate">설치일 : 2021-04-30</span><br>
-                    <span class="mainText" id="installType">설치유형 : 마트</span>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <figure id="storeCase">
+                <img src="/img/homepage/service/testStore.jpg">
+                <h4 class="mainText" style="padding-left: 1em;">테스트매장</h4>
+                <div class="overlay">
+                    <div class="description" style="width: 100%;">
+                        <span class="mainText">테스트매장</span><br>
+                        <span class="mainText" id="installDate">설치일 : 2021-04-30</span><br>
+                        <span class="mainText" id="installType">설치유형 : 마트</span>
+                    </div>
                 </div>
-            </div>
-        </figure>
+            </figure>
+        </div>
     </div>
 </div>
 
-<div class="modal fade" id="caseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="caseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -68,7 +72,8 @@
                 </button>
             </div>
             <div class="modal-body">
-                <img src="https://cyder.co.kr/visit/servicecase" alt="매장사진" id="caseImg" style="width: 100%; margin-bottom: 2em;">
+                <img src="https://cyder.co.kr/visit/servicecase" alt="매장사진" id="caseImg"
+                     style="width: 100%; margin-bottom: 2em;">
                 <div class="col-md-12" style="padding: 0;">
                     <span class="mainText date" style="font-size: 20px"></span><br>
                     <span class="mainText type" style="font-size: 20px"></span>
@@ -83,6 +88,23 @@
 
 
 <%@include file="../footer.jsp" %>
+<script src="/js/jquery-3.6.1.min.js"></script>
+<script>
+    $('#storeCase').click(function(){
+        var title = $(this).children('h4').text();
+        var src = $(this).children('img').attr("src");
+        var date = $(this).children().children().children('#installDate').text();
+        var type = $(this).children().children().children('#installType').text();
+        $('#caseModal').modal("show");
+        $('#caseImg').attr("src",src);
+        $('#caseTitle').text(title);
+        $('.date').text(date);
+        $('.type').text(type);
+    });
+    $('#caseImg').click(function(){
 
+        $('#caseModal').modal('hide');
+    })
+</script>
 </body>
 </html>

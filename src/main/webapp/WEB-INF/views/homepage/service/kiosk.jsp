@@ -76,7 +76,7 @@
             </div>
             <div class="col-lg-2 serviceTab-button" id="tab4">
                 <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(4)"
-                                                                  onclick="setImage(&#39;/img/homepage/service/program.jpg&#39;)"">POS-4</a>
+                                                                  onclick="setImage(&#39;/img/homepage/service/program.jpg&#39;)">POS-4</a>
                 </div>
             </div>
             <!-- 탭 영역 끝-->
