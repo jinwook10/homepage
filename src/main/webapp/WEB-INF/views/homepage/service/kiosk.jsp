@@ -48,38 +48,86 @@
 </nav>
 <%--브레드크럼 끝--%>
 <div class="container" style="padding-bottom: 3rem">
-    <h1 class="mb-3 " style="text-align: center;">
-        <div class="mb-3">
-            KIOSK
-        </div>
-        <div class="progress-bar bg-info mb-3 w-100" role="progressbar"></div>
-    </h1>
     <div class="row" style="justify-content: center">
-        <div class="col-md-4">
-            <img src="/img/homepage/service/kiosk.jpg" class="img-thumbnail serviceImg" alt="포스기1" style="object-fit: contain;">
-            <h3 style="text-align: center">KIOSK mk1</h3>
-            <p>포스의 장점 및 특징, 주로 사용하는 매장유형, 간략한 스펙</p>
-        </div>
-        <div class="col-md-4">
-            <img src="/img/homepage/service/kiosk.jpg" class="img-thumbnail serviceImg" alt="포스기2" style="object-fit: contain;">
-            <h3 style="text-align: center">KIOSK mk2</h3>
-            <p>포스의 장점 및 특징, 주로 사용하는 매장유형, 간략한 스펙</p>
+        <div class="col-lg-8 my-4" style="text-align: start;">
+            <h3>
+                KIOSK 기기
+            </h3>
         </div>
     </div>
-    <div class="row" style="justify-content: center">
-        <div class="col-md-4">
-            <img src="/img/homepage/service/kiosk.jpg" class="img-thumbnail serviceImg" alt="포스기3" style="object-fit: contain;">
-            <h3 style="text-align: center">KIOSK mk3</h3>
-            <p>포스의 장점 및 특징, 주로 사용하는 매장유형, 간략한 스펙</p>
+
+    <div class="text-center">
+        <!-- 탭 영역 -->
+        <div class="row serviceTab mb-5" style="justify-content: center">
+            <div class="col-lg-2 serviceTab-button on" id="tab1">
+                <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(1)"
+                                                                  onclick="setImage(&#39;/img/homepage/service/pos.png&#39;)">POS-1</a>
+                </div>
+            </div>
+            <div class="col-lg-2 serviceTab-button" id="tab2">
+                <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(2)"
+                                                                  onclick="setImage(&#39;/img/homepage/service/kiosk.jpg&#39;)">POS-2</a>
+                </div>
+            </div>
+            <div class="col-lg-2 serviceTab-button" id="tab3">
+                <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(3)"
+                                                                  onclick="setImage(&#39;/img/homepage/service/terminal.jpg&#39;)">POS-3</a>
+                </div>
+            </div>
+            <div class="col-lg-2 serviceTab-button" id="tab4">
+                <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(4)"
+                                                                  onclick="setImage(&#39;/img/homepage/service/program.jpg&#39;)"">POS-4</a>
+                </div>
+            </div>
+            <!-- 탭 영역 끝-->
+
         </div>
-        <div class="col-md-4">
-            <img src="/img/homepage/service/kiosk.jpg" class="img-thumbnail serviceImg" alt="포스기4" style="object-fit: contain;">
-            <h3 style="text-align: center">KIOSK mk4</h3>
-            <p>포스의 장점 및 특징, 주로 사용하는 매장유형, 간략한 스펙</p>
+        <%-- 이미지 --%>
+        <div class="row">
+            <img class="col-lg-4 mb-3 mx-auto serviceImg-change" src="/img/homepage/service/pos.png"
+                 style="object-fit: cover;">
         </div>
+        <%-- 이미지 끝 --%>
+
+        <div class="row" style="justify-content: center;">
+            <div class="col-lg-8 under-line"></div>
+        </div>
+        <h5 class="col-lg-8 mb-3 mx-auto under-line">상세 정보</h5>
+
+        <div class="row" style="justify-content: center;">
+            <div id="content1">
+                내용1@@@@@@@@@@@@@
+            </div>
+            <div id="content2" style="display: none">
+                내용2@@@@@@@@@@@
+            </div>
+            <div id="content3" style="display: none">
+                내용3@@@@@@@@@@@@@@@@
+            </div>
+            <div id="content4" style="display: none">
+                내용4@@@@@@@@
+            </div>
+        </div>
+        <div class="d-block d-lg-none mb-3"></div>
     </div>
+
 </div>
 <%@include file="../footer.jsp" %>
+<script src="/js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+    });
 
+    function setImage(img_url) {
+        $(".serviceImg-change").attr("src", img_url);
+    }
+
+    function showDetail(tabClassNo) {
+        $('[id^=tab]').removeClass('on');
+        $('#tab' + tabClassNo).addClass('on');
+        $('[id^=content]').hide();
+        $('#content' + tabClassNo).show();
+    }
+</script>
 </body>
 </html>
