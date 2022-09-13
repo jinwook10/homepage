@@ -45,4 +45,33 @@ public class HomeController {
         return "/homepage/service/case";
     }
 
+    @GetMapping("/programpos")
+    public String programpos() {
+        return "/homepage/program/p-pos";
+    }
+
+    @GetMapping("/programkiosk")
+    public String programkiosk() {
+        return "/homepage/program/p-kiosk";
+    }
+
+    @GetMapping("/faq")
+    public String faq(){
+        return "/homepage/faq/faq";
+    }
+
+    @GetMapping("/privacy")
+    public String privacy(){
+        return "/homepage/copyright/privacy";
+    }
+
+    @GetMapping("/terms")
+    public String terms(){
+        return "/homepage/copyright/terms";
+    }
+
+    @GetMapping("/license")
+    public String license(){
+        return "/homepage/copyright/license";
+    }
 }

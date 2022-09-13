@@ -23,13 +23,13 @@
             <div class="col-md-6" style="padding: unset">
                 <ul class="nav nav-footer justify-content-end">
                     <li class="nav-item">
-                        <a href="https://cyder.co.kr/visit/privacy" class="nav-link">개인정보처리방침</a>
+                        <a href="/privacy" class="nav-link">개인정보처리방침</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://cyder.co.kr/visit/terms" class="nav-link">이용약관</a>
+                        <a href="/terms" class="nav-link">이용약관</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://cyder.co.kr/visit/license" class="nav-link">License</a>
+                        <a href="/license" class="nav-link">License</a>
                     </li>
                     <li class="nav-item">
                         <a href="https://cyder.co.kr/staff/login" class="nav-link">관리페이지</a>

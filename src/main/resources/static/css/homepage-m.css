@@ -9,9 +9,6 @@
     .dropdown.nav-item .dropdown-menu-animation.show {
         height: 70px !important;
     }
-    .dropdown-menu {
-        background-color: #e3e3e3f0;
-    }
     .dropdown .dropdown-menu:before {
         color: #e3e3e3f0;
     }

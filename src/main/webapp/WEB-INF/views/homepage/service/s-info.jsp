@@ -37,7 +37,7 @@
 </nav>
 <%--브레드크럼 끝--%>
 <div class="container" style="padding-bottom: 3rem">
-    <div class="row" style="justify-content: center">
+    <div class="row mb" style="justify-content: center">
         <div class="col-md-4">
             <a href="/serviceinfo/pos">
                 <img src="/img/homepage/service/pos-1.png" class="serviceImg serviceImg-hover" alt="POS서비스" style="object-fit: cover;">
@@ -67,6 +67,7 @@
         </div>
     </div>
 </div>
+<%@include file="../sidebar.jsp"%>
 <%@include file="../footer.jsp" %>
 
 </body>

@@ -151,6 +151,7 @@
         </div>
     </div>
 </div>
+<%@include file="sidebar.jsp"%>
 <%@include file="footer.jsp" %>
 
 <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>

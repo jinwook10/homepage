@@ -45,20 +45,49 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-3">
-            <figure id="storeCase">
+        <div class="col-sm-4">
+            <figure id="storeCase1" onclick="showDetail(1)">
                 <img src="/img/homepage/service/testStore.jpg">
-                <h4 class="mainText" style="padding-left: 1em;">테스트매장</h4>
+                <h4 style="padding-left: 1em;">테스트매장</h4>
                 <div class="overlay">
                     <div class="description" style="width: 100%;">
-                        <span class="mainText">테스트매장</span><br>
-                        <span class="mainText" id="installDate">설치일 : 2021-04-30</span><br>
-                        <span class="mainText" id="installType">설치유형 : 마트</span>
+                        <span>테스트매장</span><br>
+                        <span class="installDate">설치일 : 2021-04-30</span><br>
+                        <span class="installType">설치유형 : 마트</span>
+                    </div>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-sm-4">
+            <figure id="storeCase2" onclick="showDetail(2)">
+                <img src="/img/homepage/service/testStore2.jpg">
+                <h4 style="padding-left: 1em;">테스트매장2</h4>
+                <div class="overlay">
+                    <div class="description" style="width: 100%;">
+                        <span>테스트매장2</span><br>
+                        <span class="installDate">설치일 : 2021-08-30</span><br>
+                        <span class="installType">설치유형 : 이마트</span>
+                    </div>
+                </div>
+            </figure>
+        </div>
+
+        <div class="col-sm-4">
+            <figure id="storeCase3" onclick="showDetail(3)">
+                <img src="/img/homepage/service/testStore3.jpg">
+                <h4 style="padding-left: 1em;">테스트매장3</h4>
+                <div class="overlay">
+                    <div class="description" style="width: 100%;">
+                        <span>테스트매장3</span><br>
+                        <span class="installDate">설치일 : 2021-01-30</span><br>
+                        <span class="installType">설치유형 : 카페</span>
                     </div>
                 </div>
             </figure>
         </div>
     </div>
+    <div class="d-none d-lg-block" style="margin-bottom: 300px"></div>
 </div>
 
 <div class="modal fade" id="caseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -67,44 +96,36 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title" id="caseTitle"></h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
             </div>
             <div class="modal-body">
-                <img src="https://cyder.co.kr/visit/servicecase" alt="매장사진" id="caseImg"
+                <img src="" alt="매장사진" id="caseImg"
                      style="width: 100%; margin-bottom: 2em;">
                 <div class="col-md-12" style="padding: 0;">
-                    <span class="mainText date" style="font-size: 20px"></span><br>
-                    <span class="mainText type" style="font-size: 20px"></span>
+                    <span class="date" style="font-size: 20px"></span><br>
+                    <span class="type" style="font-size: 20px"></span>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
             </div>
         </div>
     </div>
 </div>
-
-
+<%@include file="../sidebar.jsp"%>
 <%@include file="../footer.jsp" %>
 <script src="/js/jquery-3.6.1.min.js"></script>
 <script>
-    $('#storeCase').click(function(){
-        var title = $(this).children('h4').text();
-        var src = $(this).children('img').attr("src");
-        var date = $(this).children().children().children('#installDate').text();
-        var type = $(this).children().children().children('#installType').text();
+    function showDetail(CaseNo){
+        var title = $('#storeCase' + CaseNo).children('h4').text();
+        var src = $('#storeCase' + CaseNo).children('img').attr("src");
+        var date = $('#storeCase' + CaseNo).children().children().children('.installDate').text();
+        var type = $('#storeCase' + CaseNo).children().children().children('.installType').text();
         $('#caseModal').modal("show");
         $('#caseImg').attr("src",src);
         $('#caseTitle').text(title);
         $('.date').text(date);
         $('.type').text(type);
-    });
-    $('#caseImg').click(function(){
-
-        $('#caseModal').modal('hide');
-    })
+    }
 </script>
 </body>
 </html>

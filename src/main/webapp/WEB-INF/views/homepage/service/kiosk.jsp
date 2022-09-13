@@ -48,44 +48,78 @@
 </nav>
 <%--브레드크럼 끝--%>
 <div class="container" style="padding-bottom: 3rem">
-    <div class="row" style="justify-content: center">
-        <div class="col-lg-8 my-4" style="text-align: start;">
-            <h3>
-                KIOSK 기기
-            </h3>
-        </div>
-    </div>
-
     <div class="text-center">
         <!-- 탭 영역 -->
         <div class="row serviceTab mb-5" style="justify-content: center">
-            <div class="col-lg-2 serviceTab-button on" id="tab1">
-                <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(1)"
-                                                                  onclick="setImage(&#39;/img/homepage/service/pos.png&#39;)">POS-1</a>
+            <div class=" d-block d-lg-none">
+                <div class="dropdown">
+                    <a href="#" class="col-lg-2 serviceTab-button display-3 dropdown-toggle " data-bs-toggle="dropdown" id="tabdrop">
+                        KIOSK-1
+                    </a>
+                    <ul class="dropdown-menu tab" aria-labelledby="tabdrop" style="text-align: center">
+                        <li>
+                            <a class="dropdown-item" href="javascript:showDetail(1)" onclick="setImage('/img/homepage/service/pos.png')">
+                                KIOSK-1
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:showDetail(2)" onclick="setImage('/img/homepage/service/kiosk.jpg')">
+                                KIOSK-2
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:showDetail(3)" onclick="setImage('/img/homepage/service/terminal.jpg')">
+                                KIOSK-3
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:showDetail(4)" onclick="setImage('/img/homepage/service/program.jpg')">
+                                KIOSK-4
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-2 serviceTab-button" id="tab2">
-                <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(2)"
-                                                                  onclick="setImage(&#39;/img/homepage/service/kiosk.jpg&#39;)">POS-2</a>
-                </div>
-            </div>
-            <div class="col-lg-2 serviceTab-button" id="tab3">
-                <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(3)"
-                                                                  onclick="setImage(&#39;/img/homepage/service/terminal.jpg&#39;)">POS-3</a>
-                </div>
-            </div>
-            <div class="col-lg-2 serviceTab-button" id="tab4">
-                <div class="display-3" style="font-size: 2rem"><a href="javascript:showDetail(4)"
-                                                                  onclick="setImage(&#39;/img/homepage/service/program.jpg&#39;)">POS-4</a>
-                </div>
-            </div>
-            <!-- 탭 영역 끝-->
 
+            <div class="row text-center py-3 mt-3 d-none d-lg-block">
+                <div class="col-8 mx-auto">
+                    <div class="nav-wrapper position-relative end-0">
+                        <ul class="nav nav-pills nav-fill p-1" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#"
+                                   role="tab" aria-controls="pos1" aria-selected="true" id="tab1">
+                                    KIOSK-1
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#"
+                                   role="tab" aria-controls="pos2" aria-selected="false" id="tab2">
+                                    KIOSK-2
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#"
+                                   role="tab" aria-controls="pos3" aria-selected="false" id="tab3">
+                                    KIOSK-3
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#"
+                                   role="tab" aria-controls="pos4" aria-selected="false" id="tab4">
+                                    KIOSK-4
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- 탭 영역 끝-->
+
         <%-- 이미지 --%>
         <div class="row">
             <img class="col-lg-4 mb-3 mx-auto serviceImg-change" src="/img/homepage/service/pos.png"
-                 style="object-fit: cover;">
+                 style="height: 300px; object-fit: contain;">
         </div>
         <%-- 이미지 끝 --%>
 
@@ -95,8 +129,13 @@
         <h5 class="col-lg-8 mb-3 mx-auto under-line">상세 정보</h5>
 
         <div class="row" style="justify-content: center;">
-            <div id="content1">
-                내용1@@@@@@@@@@@@@
+            <div class="row" id="content1">
+                <div>
+                    내용1@@@@@@@@@@@@@
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <img src="/img/homepage/service/example.jpg" class="w-100">
+                </div>
             </div>
             <div id="content2" style="display: none">
                 내용2@@@@@@@@@@@
@@ -108,16 +147,13 @@
                 내용4@@@@@@@@
             </div>
         </div>
-        <div class="d-block d-lg-none mb-3"></div>
     </div>
-
+    <div class="d-none d-lg-block mb-3"></div>
 </div>
+<%@include file="../sidebar.jsp"%>
 <%@include file="../footer.jsp" %>
 <script src="/js/jquery-3.6.1.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-    });
-
     function setImage(img_url) {
         $(".serviceImg-change").attr("src", img_url);
     }
@@ -127,7 +163,26 @@
         $('#tab' + tabClassNo).addClass('on');
         $('[id^=content]').hide();
         $('#content' + tabClassNo).show();
+        var title = $('#tab'+tabClassNo).text();
+        $('#tabdrop').text(title);
     }
+    $('#tab1').click(function(){
+        showDetail(1)
+        setImage('/img/homepage/service/pos.png')
+    });
+    $('#tab2').click(function(){
+        showDetail(2)
+        setImage('/img/homepage/service/kiosk.jpg')
+    });
+    $('#tab3').click(function(){
+        showDetail(3)
+        setImage('/img/homepage/service/terminal.jpg')
+    });
+    $('#tab4').click(function(){
+        showDetail(4)
+        setImage('/img/homepage/service/program.jpg')
+    });
+
 </script>
 </body>
 </html>

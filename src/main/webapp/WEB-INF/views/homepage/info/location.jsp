@@ -98,6 +98,7 @@
     </div>
 </div>
 <div class="location-padding"></div>
+<%@include file="../sidebar.jsp"%>
 <%@include file="../footer.jsp" %>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66788a3936d942a415438602bb6273d9"></script>
 <script>

@@ -64,7 +64,7 @@
     </div>
     <div class="info-padding"></div>
 </div>
-
+<%@include file="../sidebar.jsp"%>
 <%@include file="../footer.jsp" %>
 </body>
 </html>

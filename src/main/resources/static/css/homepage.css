@@ -121,16 +121,16 @@ div.footInfo span {
 
 /* 드롭다운 메뉴 색상 */
 .dropdown-menu {
-    background-color: #e3e3e3ba
+    background-color: #e3e3e3f0
 }
 
-.list-group {
+.list-group-item {
     --bs-list-group-bg: #eafcff00
 }
 
 @media (min-width: 992px) {
     .dropdown .dropdown-menu::before {
-        color: #e3e3e3ba
+        color: #e3e3e3f0
     }
 }
 
@@ -182,23 +182,32 @@ div.footInfo span {
     width: 100%;
     height: 300px;
 }
-.serviceTab .on {
-    background: skyblue!important;
+.nav.nav-pills {
+    background: #f0f2f5;
+}
+@media screen and (min-width: 993px){
+    .row.mb {
+        margin-bottom: 30px;
+    }
 }
 .serviceTab-button {
-    background: lightgray;
-    border: solid 1px;
+    border-radius: 10px;
+    background: #f0f2f5;
+    padding-inline: 1rem;
+    color: black;
 }
-/*피규어 모달*/
-.container content, .container aside {
-    position: relative;
+.serviceTab-button:hover {
+    color: black;
 }
-
+.dropdown-menu.tab.show {
+    left: 50%!important;
+    transform: translate(-50%,5%)!important;
+}
+/*설치사례 피규어 모달*/
 figure {
     width: 100%;
     position: relative;
 }
-
 figure img {
     display: block;
     width: 100%;
@@ -206,19 +215,17 @@ figure img {
 }
 figure h4 {
     position: absolute;
-    top: calc(100% - 50px);
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
     color: #fff;
     background: rgba(0, 0, 0, 0.6);
     margin: 0;
+    padding-block: 0.5rem;
 }
 figure .overlay {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -233,11 +240,9 @@ figure .overlay .description {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 figure:hover h4 {
     display: none;
 }
@@ -250,6 +255,53 @@ figure:hover img{
 }
 figure:hover{
     cursor: pointer;
+}
+/*프로그램*/
+img.softImg {
+    background-image: url(/img/homepage/program/frame.png);
+    padding: 1.25rem;
+    background-size: 100% 100%;
+}
+.softImg.img-thumbnail {
+    margin-bottom: 1rem;
+}
+.img-text {
+    font-family: GmarketSansBold;
+}
+.com-sm-12 span {
+    font-family: GmarketSansBold;
+}
+/*고객센터*/
+.accordion {
+    --bs-accordion-color: black;
+    font-weight: bold;
+}
+.accordion-header {
+    font-family: GmarketSansBold;
+}
+.accordion button[aria-expanded=true] .collapse-close {
+    display: none;
+}
+.pagination.pagination-secondary .page-item.active>.page-link {
+    color: white;
+}
+/*사이드바*/
+.quickSide {
+    position: fixed;
+    top: 20%;
+    right: 4.5vw;
+    width: 100px;
+}
+.quickSide .list-group-item {
+    --bs-list-group-bg: darkgray;
+}
+.quickSide .list-group-item-action:hover {
+    background : #344767 !important;
+}
+@media screen and (max-width: 1668px) {
+    .quickSide {
+        display: none !important;
+    }
 }
 /*중간크기*/
 @media screen and (min-width: 993px) and (max-width: 1199px) {
