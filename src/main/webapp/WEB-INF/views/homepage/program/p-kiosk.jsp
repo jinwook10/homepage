@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    <div class="row" style="justify-content: center; word-break: keep-all;">
+    <div class="row" style="justify-content: center; word-break: keep-all;">dy
         <div class="col-lg-4 mb-5">
         <span class="lead img-text">
             시작화면</span>

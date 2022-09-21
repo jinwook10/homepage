@@ -21,8 +21,7 @@
     <i class="fas fa-question-circle display-4"></i>
     FAQ
   </button>
-  <button type="button" class="list-group-item list-group-item-action text-white"
-          onclick="location.href='/location'">
+  <button type="button" class="list-group-item list-group-item-action text-white" onclick="location.href='/location'">
     <i class="fas fa-map-marked-alt display-4"></i>오시는길
   </button>
   <button type="button" class="list-group-item list-group-item-action text-white"
