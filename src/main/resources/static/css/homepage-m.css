@@ -9,9 +9,11 @@
     .dropdown.nav-item .dropdown-menu-animation.show {
         height: 70px !important;
     }
+
     .dropdown .dropdown-menu:before {
         color: #e3e3e3f0;
     }
+
     #navigation {
         border-bottom: solid #cfcfcf 1px;
         position: absolute;
@@ -24,11 +26,13 @@
         border-bottom-right-radius: 0.75rem;
         opacity: 0.9;
     }
+
     /*컨테이너 좌우 패딩*/
     .container {
         padding-right: 15px;
         padding-left: 15px;
     }
+
     .container.mobile {
         padding: unset;
     }
@@ -92,7 +96,7 @@
 
     .mobile-sol span {
         position: absolute;
-        top: 73%;
+        top: 74%;
         left: 64%;
         color: #ffffff;
         font-size: 5.5vw;
@@ -101,7 +105,7 @@
 
     .mobile-sol p {
         position: absolute;
-        top: 84%;
+        top: 85%;
         left: 57%;
         color: #ffffff;
         font-size: 2.8vw;
@@ -136,36 +140,71 @@
         top: 73%;
         width: 36% !important;
     }
+
     .under-button-img {
         left: 10%;
     }
+
     /*인사말*/
     .mobile-greetings {
         padding: 5%;
     }
+
     .info-text:before {
         height: calc(100% - 20%);
     }
+
     .info-padding {
         padding-bottom: 0px;
     }
+
     .mb-9.mobile {
-        margin-bottom: 6rem!important;
+        margin-bottom: 6rem !important;
     }
+
     .info-text {
         text-align: center;
         font-weight: bold;
         font-size: 30px;
         color: black;
     }
+
     /*오시는길*/
     #map {
-        height: 350px!important;
+        height: 350px !important;
     }
-    .mobile-location{
+
+    .mobile-location {
         margin-bottom: 10px;
     }
+
     .location-padding {
         padding-bottom: 0px;
+    }
+
+    /*  서비스  */
+    .extable {
+        font-size: small;
+    }
+
+    .extable td {
+        padding-inline: unset;
+    }
+
+    /* 서비스 탭 */
+    .serviceTab-button {
+        border-radius: 10px;
+        background: #f0f2f5;
+        padding-inline: 1rem;
+        padding-block: 0.3rem;
+        font-size: 2rem;
+        color: black;
+    }
+    .serviceTab-button:hover {
+        color: black;
+    }
+    .dropdown-menu.tab.show {
+        left: 50%!important;
+        transform: translate(-50%,5%)!important;
     }
 }

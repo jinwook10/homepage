@@ -51,15 +51,21 @@
     <div class="row" style="justify-content: center">
         <div class="col-lg-8">
     <textarea style="width: 100%; height: 500px; resize: none; word-break: keep-all" disabled="disabled">
-1.GmarketSansBold
+1. Material Kit 2
+이 페이지는 홈페이지 탬플릿의 Free버전을 사용하고 있습니다.
+이 라이선스를 사용하여 개인 및 상업적 용도로 모든 종류의 프로젝트, 웹사이트, 웹 앱, 모바일 앱을 만들 수 있습니다.
+제품의 코드 및 디자인 파일은 선택한 라이선스에 따라 팀에서 한 명 또는 여러 명이 액세스할 수 있습니다.
+조건 및 제한 사항에 대한 정확한 내용은 라이센스 전문을 참조하십시오.
+라이센스 전문 : https://www.creative-tim.com/license?_ga=2.73381075.1790482912.1663892087-937993833.1659513280
+
+2. GmarketSansBold
 이 페이지는 Gmarket에서 제공한 GmarketSansBold체가 사용되어 있습니다.
 Gmarket Sans는 다양한 브랜드, 판매자, 사용자가 함께 성장하며 가치를 나눌 수 있도록 만든 글꼴입니다.
 누구나 아무 제약 없이 쉽게 사용할 수 있습니다.
 Gmarket Sans는 누구나 제약 없이 자유롭게 수정하고 재배포 하실 수 있습니다.
 
-2.Inter-Bold
-Inter는 무료 오픈 소스 글꼴 모음입니다.
-상상할 수 있는 거의 모든 방식으로 이 글꼴을 자유롭게 사용할 수 있습니다.
+3. Inter
+이 페이지는 무료 오픈 소스 글꼴 모음인 Inter 를 사용하고 있습니다.
 조건 및 제한 사항에 대한 정확한 내용은 SIL Open Font License 1.1을 참조하십시오.
 라이센스 전문 : https://github.com/rsms/inter/blob/master/LICENSE.txt
 		</textarea>

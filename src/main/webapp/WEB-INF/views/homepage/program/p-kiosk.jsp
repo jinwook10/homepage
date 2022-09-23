@@ -44,11 +44,11 @@
         </div>
     </div>
 
-    <div class="row" style="justify-content: center; word-break: keep-all;">dy
+    <div class="row" style="justify-content: center; word-break: keep-all;">
         <div class="col-lg-4 mb-5">
         <span class="lead img-text">
             시작화면</span>
-            <img alt="메인화면" class="softImg img-thumbnail" src="img/homepage/program/kiosk1.png" draggable="false">
+            <img alt="시작화면" class="softImg img-thumbnail" src="img/homepage/program/kiosk1.png" draggable="false">
             <div class="com-sm-12">
                 <span>간단한 키오스크 사용방법을 안내하며, 시작하기를 누르면 메인화면으로 이동합니다. </span>
             </div>
@@ -63,9 +63,27 @@
             </div>
         </div>
         <div class="col-lg-4 mb-5">
+        <span class="lead img-text">
+            현금결제</span>
+            <img alt="현금결제" class="softImg img-thumbnail" src="img/homepage/program/kiosk3.png" draggable="false">
+            <div class="com-sm-12">
+                <span>동전 및 지폐를 현금 투입구에 넣어 결제 합니다.</span><br>
+                <span>잘못 투입했을 경우 취소버튼을 누르면 현금을 반환합니다.</span>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-5 offset-md-2">
+            <span class="lead img-text">
+            카드결제</span>
+            <img alt="카드결제" class="softImg img-thumbnail" src="img/homepage/program/kiosk4.png" draggable="false">
+            <div class="com-sm-12">
+                <span>카드를 카드 투입구에 넣어 결제 합니다.</span><br>
+                <span>IC카드 오류시 마그네틱을 이용해 결제 할 수 있습니다.</span>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-5">
             <span class="lead img-text">
                 관리자화면</span>
-            <img alt="관리자메인" class="softImg img-thumbnail" src="img/homepage/program/kiosk3.png" draggable="false">
+            <img alt="관리자메인" class="softImg img-thumbnail" src="img/homepage/program/kiosk5.png" draggable="false">
             <div class="com-sm-12">
                 <span>현 매출 상황을 간략하게 보여주며, 공지사항, 프로그램 버전 정보를 보여줍니다.</span>
             </div>
@@ -73,7 +91,7 @@
         <div class="col-lg-4 mb-5 offset-md-2">
             <span class="lead img-text">
                 거래관리</span>
-            <img alt="거래관리" class="softImg img-thumbnail" src="img/homepage/program/kiosk4.png" draggable="false">
+            <img alt="거래관리" class="softImg img-thumbnail" src="img/homepage/program/kiosk6.png" draggable="false">
             <div class="com-sm-12">
                 <span>날짜별 거래내역과 환불, 영수증을 보여주고 출력할수 있습니다.</span>
             </div>
@@ -81,7 +99,7 @@
         <div class="col-lg-4 mb-5">
             <span class="lead img-text">
                 현금관리</span>
-            <img alt="현금관리" class="softImg img-thumbnail" src="img/homepage/program/kiosk5.png" draggable="false">
+            <img alt="현금관리" class="softImg img-thumbnail" src="img/homepage/program/kiosk7.png" draggable="false">
             <div class="com-sm-12">
                 <span>현금 기계의 상태를 확인할수 있고, 현금의 잔량을 확인, 설정 할 수 있습니다.</span>
             </div>
@@ -89,46 +107,24 @@
         <div class="col-lg-4 mb-5 offset-md-2">
             <span class="lead img-text">
                 상품관리</span>
-            <img alt="상품관리" class="softImg img-thumbnail" src="img/homepage/program/kiosk6.png" draggable="false">
+            <img alt="상품관리" class="softImg img-thumbnail" src="img/homepage/program/kiosk8.png" draggable="false">
             <div class="com-sm-12">
                 <span>상품의 등록, 수정 및 삭제를 포함한 상품 관리 작업을 할 수 있습니다.</span>
             </div>
         </div>
         <div class="col-lg-4 mb-5">
-            <span class="lead img-text">
-                회원관리</span>
-            <img alt="회원관리" class="softImg img-thumbnail" src="img/homepage/program/kiosk7.png" draggable="false">
-            <div class="com-sm-12">
-                <span>준비중 입니다.</span>
-            </div>
-        </div>
-        <div class="col-lg-4 mb-5 offset-md-2">
         <span class="lead img-text">
                 매출조회</span>
-            <img alt="매출조회" class="softImg img-thumbnail" src="img/homepage/program/kiosk8.png" draggable="false">
+            <img alt="매출조회" class="softImg img-thumbnail" src="img/homepage/program/kiosk9.png" draggable="false">
             <div class="com-sm-12">
                 <span>기간별 매출을 분류하여 보여줍니다.</span>
             </div>
         </div>
-        <div class=" col-lg-4 mb-5">
-            <span class="lead img-text">
-                일반설정</span>
-            <img alt="일반설정" class="softImg img-thumbnail" src="img/homepage/program/kiosk9.png" draggable="false">
-            <div class="com-sm-12">
-                <span>관리자 비밀번호를 설정 할 수 있습니다.</span>
-            </div>
-        </div>
         <div class=" col-lg-4 mb-5 offset-md-2">
-            <span class="lead img-text">
-                원격지원</span>
-        <img alt="원격지원" class="softImg img-thumbnail" src="img/homepage/program/kiosk10.png" draggable="false">
-        <div class="com-sm-12">
-            <span>팀뷰어, 헬프유 등 원격 지원 기능을 이용해 원격 작업을 할 수 있습니다.</span>
         </div>
-    </div>
     </div>
 </div>
-<%@include file="../sidebar.jsp"%>
+<%@include file="../sidebar.jsp" %>
 <%@include file="../footer.jsp" %>
 </body>
 </html>

@@ -192,19 +192,44 @@ div.footInfo span {
         margin-bottom: 30px;
     }
 }
-.serviceTab-button {
-    border-radius: 10px;
-    background: #f0f2f5;
-    padding-inline: 1rem;
-    color: black;
+
+/* 상세정보 표 */
+.odded {
+    background-color: #fbfbfb;
 }
-.serviceTab-button:hover {
-    color: black;
+.table-border-right {
+    border-right: 1px solid #e4e4e4 !important;
 }
-.dropdown-menu.tab.show {
-    left: 50%!important;
-    transform: translate(-50%,5%)!important;
+.extable td,th,tr{
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+    font-family: inter-light;
+    word-break: keep-all;
 }
+.extable td {
+    padding-inline: 30px;
+}
+.extable th {
+    background-color: #f6f6f6;
+}
+/* 서비스 상세 탭 */
+.sub-tab li{
+    display: inline-block;
+    list-style: none;
+    border : solid 1px #d9d9d9;
+}
+.sub-tab li :hover {
+    background-color: #ced4da;
+}
+.sub-tab li a {
+    display: block;
+    width: 110px;
+    line-height: 56px;
+}
+.on {
+    background-color: #ced4da;
+}
+
 /*설치사례 피규어 모달*/
 figure {
     width: 100%;
@@ -310,6 +335,14 @@ img.softImg {
         display: none !important;
     }
 }
+/* 백그라운드 투명 필터 - 그라디언트 이용*/
+/*.back-filter {*/
+/*    background-image:linear-gradient(*/
+/*            rgba(255, 255, 255, 0.9),*/
+/*            rgba(255, 255, 255, 0.9)*/
+/*    ),url(/img/homepage/info/location-back.jpg);*/
+/*    background-clip: content-box;*/
+/*}*/
 /*중간크기*/
 @media screen and (min-width: 993px) and (max-width: 1199px) {
     .info-text:before {
@@ -351,6 +384,11 @@ img.softImg {
 @font-face {
     font-family: "inter";
     src: url(../font/Inter-Bold.otf);
+}
+
+@font-face {
+    font-family: "inter-light";
+    src: url(../font/Inter-Light.otf);
 }
 
 @font-face {

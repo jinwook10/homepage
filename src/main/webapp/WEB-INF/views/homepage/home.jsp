@@ -83,7 +83,7 @@
                     </div>
                     <div class="col-lg-4" data-tilt data-tilt-scale="0.98" data-tilt-max="5">
                         <a href="/programpos">
-                            <img src="/img/homepage/solution-1.png" class="img-button w-100" alt="솔루션">
+                            <img src="/img/homepage/solution-1.jpg" class="img-button w-100" alt="솔루션">
                         </a>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                     <a href="/serviceinfo/terminal">
                         <%--                        <div class="col-xs-2 mb-3" style="background-color: beige;">--%>
                         <div class="col-xs-2 mb-3"
-                             style="background-image: url(/img/homepage/cardpos-back.jpg); background-size: cover">
+                             style="background-image: url(/img/homepage/cardpos-back.png); background-size: cover">
                             <img src="/img/homepage/cardpos-1-m.png" class="img-button w-50" alt="카드단말기">
                             <div class="mobile-card" style="text-align: center; ">
                                 <span>카드단말기</span>

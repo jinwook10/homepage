@@ -42,13 +42,13 @@
             <a href="/serviceinfo/pos">
                 <img src="/img/homepage/service/pos-1.png" class="serviceImg serviceImg-hover" alt="POS서비스" style="object-fit: cover;" data-tilt data-tilt-scale="0.98" data-tilt-max="5">
             </a>
-            <h3 style="text-align: center" class="mt-2">POS 서비스</h3>
+            <h3 style="text-align: center" class="mt-2">POS</h3>
         </div>
         <div class="col-md-4">
             <a href="/serviceinfo/kiosk">
             <img src="/img/homepage/service/kiosk-1.png" class="serviceImg serviceImg-hover" alt="KIOSK서비스" style="object-fit: cover;" data-tilt data-tilt-scale="0.98" data-tilt-max="5">
             </a>
-            <h3 style="text-align: center" class="mt-2">KIOSK 서비스</h3>
+            <h3 style="text-align: center" class="mt-2">KIOSK</h3>
         </div>
     </div>
     <div class="row" style="justify-content: center">
@@ -56,13 +56,13 @@
             <a href="/serviceinfo/terminal">
             <img src="/img/homepage/service/terminal.jpg" class="serviceImg serviceImg-hover" alt="단말기서비스" style="object-fit: cover;" data-tilt data-tilt-scale="0.98" data-tilt-max="5">
             </a>
-            <h3 style="text-align: center" class="mt-2">단말기 서비스</h3>
+            <h3 style="text-align: center" class="mt-2">단말기</h3>
         </div>
         <div class="col-md-4">
             <a href="/programpos">
             <img src="/img/homepage/service/program.jpg" class="serviceImg serviceImg-hover" alt="프로그램" style="object-fit: cover;" data-tilt data-tilt-scale="0.98" data-tilt-max="5">
             </a>
-            <h3 style="text-align: center" class="mt-2">프로그램 서비스</h3>
+            <h3 style="text-align: center" class="mt-2">프로그램</h3>
 
         </div>
     </div>

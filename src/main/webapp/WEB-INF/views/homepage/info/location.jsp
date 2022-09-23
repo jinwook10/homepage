@@ -37,7 +37,7 @@
 </nav>
 <%--브레드크럼 끝--%>
 
-<div class="container" style="padding-bottom: 3rem;">
+<div class="container back-filter" style="padding-bottom: 3rem;">
     <div class="row" style="justify-content: center">
         <div class="col-lg-8 mb-3" style="text-align: start;">
             <h3>
